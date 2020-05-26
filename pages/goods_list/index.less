@@ -1,0 +1,32 @@
+/* pages/goods_list/index.wxss */
+.goods-list {
+  .goods-item {
+    display: flex;
+    .goods-img-wrap {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      image {
+        width: 70%;
+      }
+    }
+    .goods-info-wrap {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .goods-name {
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .goods-price {
+        color: var(--themeColor);
+        font-size: 32rpx;
+      }
+    }
+  }
+}

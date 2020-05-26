@@ -1,0 +1,24 @@
+<!--pages/collect/index.wxml-->
+<view class="collect-container">
+  <view class="tabs">
+  <my-tabs tabs="{{tabs}}" bind:changeActive="handlechangeActive"></my-tabs>
+  </view>
+
+  <view class="collect-filter">
+    <view class="current">全部</view>
+    <view>正在热卖</view>
+    <view>即将上市</view>
+  </view>
+
+  <view class="collect-content">
+    <view class="collect-item" wx:for="{{colGoodsList}}" wx:key="goods_id">
+      <view class="item-img">
+        <image mode="widthFix" src="{{item.goods_small_log}}" />
+      </view>
+      <view class="item-info">
+        <view class="item-name">{{item.goods_name}}</view>
+        <view class="item-price">{{item.goods_price}}</view>
+      </view>
+    </view>
+  </view>
+</view>

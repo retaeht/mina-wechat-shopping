@@ -1,0 +1,12 @@
+<!--pages/search/index.wxml-->
+<view class="search-container">
+  <view class="search-input-row">
+    <input type="text" placeholder="小米" bindinput="handleInput" value="{{value}}"></input>
+    <view class="btn" hidden="{{!isFocus}}" bindtap="handleCancel">取消</view>
+  </view>
+  <view class="search-list">
+  <navigator class="list-item" wx:for="{{searchList}}" wx:key="goods_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+    {{item.goods_name}}
+  </navigator>
+  </view>
+</view>

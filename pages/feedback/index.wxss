@@ -1,0 +1,51 @@
+/* pages/feedback/index.wxss */
+page {
+  background-color: #f2f2f2;
+}
+.feedback-container .fb-main {
+  padding: 20rpx;
+}
+.feedback-container .fb-main .fb-title {
+  padding: 20rpx 0;
+}
+.feedback-container .fb-main .fb-tips {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx;
+}
+.feedback-container .fb-main .fb-tips view {
+  padding: 20rpx 0;
+  text-align: center;
+  width: 30%;
+  background-color: #fff;
+  margin: 0 10rpx 20rpx 10rpx ;
+}
+.feedback-container .fb-main .fb-content {
+  background-color: #fff;
+  padding: 20rpx;
+}
+.feedback-container .fb-main .fb-content .fb-tool {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback-container .fb-main .fb-content .fb-tool button {
+  width: 90rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #ccc;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+}
+.feedback-container .fb-main .fb-btn {
+  margin-top: 20rpx;
+}
+.feedback-container .fb-main .fb-btn view {
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 32rpx;
+  padding: 30rpx 50rpx;
+  float: right;
+}

@@ -1,0 +1,81 @@
+<!--pages/user/index.wxml-->
+<view class="user-info-container">
+  <view class="user-info-wrap" >
+    <view class="user-img-wrap" wx:if="{{userInfo.nickName}}">
+      <image  class="user-bgi" src="{{userInfo.avatarUrl}}"/>
+      <view class="user-info-wrap">
+        <image src="{{userInfo.avatarUrl}}"/>
+        <view class="user-nickName">{{userInfo.nickName}}</view>
+      </view>  
+    </view>
+    <view class="login-btn" wx:else>
+      <navigator url="/pages/login/index">
+          登录
+      </navigator>
+        
+    </view>
+  </view>
+
+  <view class="user-content">
+    <view class="user-main">
+      <view class="history-wrap">
+        <navigator>
+          <view class="num">0</view>
+          <view class="name">收场的店铺</view>
+        </navigator>
+        <navigator url="/pages/collect/index">
+          <view class="num">{{collectGoodsNum}}</view>
+          <view class="name">收场的商品</view>
+        </navigator>
+        <navigator>
+          <view class="num">0</view>
+          <view class="name">收场的店铺</view>
+        </navigator>
+        <navigator>
+          <view class="num">0</view>
+          <view class="name">收场的店铺</view>
+        </navigator>  
+      </view>
+
+      <view class="order-wrap">
+        <view class="order-title">我的订单</view>
+        <view class="order-content">
+          <navigator url="/pages/order/index?type=1">
+          <view class="iconfont icon-icon_order"></view>
+          <view class="name">全部订单</view>
+          </navigator>
+          <navigator url="/pages/order/index?type=2">
+            <view class="iconfont icon-icon_order"></view>
+            <view class="name">收场的店铺</view>
+          </navigator>
+          <navigator url="/pages/order/index?type=3">
+            <view class="iconfont icon-icon_order"></view>
+            <view class="name">收场的店铺</view>
+          </navigator>
+          <navigator url="/pages/order/index?type=4">
+            <view class="iconfont icon-icon_order"></view>
+            <view class="name">收场的店铺</view>
+         </navigator>  
+        </view>
+      </view>
+
+      <view class="address-wrap">
+        收货地址
+      </view>
+
+      <view class="app-info-wrap">
+        <view class="app-info-item">
+          <text>联系客服</text>
+          <text>400-8000-000</text>
+        </view>
+        <navigator url="/pages/feedback/index" class="app-info-item">意见反馈</navigator>
+        <view class="app-info-item">关于我们</view>
+      </view>
+
+      <view class="share-wrap">
+        把应用推荐给其他人
+      </view>
+    </view>
+  </view>
+</view>
+  

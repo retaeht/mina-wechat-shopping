@@ -1,0 +1,28 @@
+<view class="goods-list">
+  <my-search></my-search>
+  <my-tabs tabs="{{tabs}}" bind:changeActive="tabItemChange">
+    <block wx:if="{{tabs[0].isActive}}">
+    
+      <view class="first-tab">
+        <navigator class="goods-item" wx:for="{{goodsList}}" wx:key="cat_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+          <!--左侧图片容器-->
+          <view class="goods-img-wrap">
+            <image mode="widthFix" src="{{item.goods_small_logo}}" />
+          </view>
+          <!--右侧商品容器-->
+          <view class="goods-info-wrap">
+            <view class="goods-name">{{item.goods_name}}</view>
+            <view class="goods-price">￥{{item.goods_price}}</view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+    <block wx:if="{{tabs[1].isActive}}">
+      
+    </block>
+    <block wx:if="{{tabs[2].isActive}}">
+      
+    </block>
+      
+  </my-tabs>
+</view>

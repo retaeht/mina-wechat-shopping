@@ -1,0 +1,29 @@
+<!--pages/feedback/index.wxml-->
+<view class="feedback-container">
+<view class="tabs">
+  <my-tabs tabs="{{tabs}}" bind:changeActive="handlechangeActive"></my-tabs>
+  </view>
+
+  <view class="fb-main">
+    <view class="fb-title">问题的种类</view>
+    <view class="fb-tips">
+      <view> 功能建议</view>
+      <view> 购买遇到的问题</view>
+      <view> 性能问题</view>
+      <view> 其他</view>
+    </view>
+    <view class="fb-content">
+      <textarea placeholder="请阐述一下您的问题" value="{{textareaContent}}" bindinput="handleGetTextarea" cols="30" rows="10"></textarea>
+      <view class="fb-tool">
+        <button bindtap="handleUpImg">+</button>
+        <!--上传图片预览组件-->
+        <my-upImg upImgPath="{{upImgPath}}" bind:deleteImg="handleDeleteImg"></my-upImg>
+      </view>  
+    </view>
+    <view class="fb-btn">
+      <view bindtap="handleSubmit">
+        提交
+      </view>
+    </view>
+  </view>
+</view>

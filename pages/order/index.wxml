@@ -1,0 +1,21 @@
+<!--pages/order/index.wxml-->
+<view class="order-container">
+<my-tabs tabs="{{tabs}}" bind:changeActive="tabItemChange"></my-tabs>
+
+<view class="roder-main">
+  <view class="order-item" wx:for="{{orderList}}" wx:key="order_id">
+    <view class="order-no-row">
+      <text>订单编号：</text>
+      <text>{{item.order_number}}</text>
+    </view>
+    <view class="order-no-price">
+      <text>订单价格：</text>
+      <text>{{item.order_price}}</text>
+    </view>
+    <view class="order-no-data">
+      <text>商品日期：</text>
+      <text>{{item.create_time_cn}}</text>
+    </view>
+  </view>
+</view>
+</view>

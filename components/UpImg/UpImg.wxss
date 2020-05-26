@@ -1,0 +1,21 @@
+/* components/UpImg/UpImg.wxss */
+.upImg-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.upImg-container .upImag-item {
+  margin-left: 20rpx;
+  position: relative;
+  width: 90rpx;
+  height: 90rpx;
+}
+.upImg-container .upImag-item image {
+  border-radius: 8rpx;
+  width: 100%;
+  height: 100%;
+}
+.upImg-container .upImag-item icon {
+  position: absolute;
+  top: -35%;
+  right: 0;
+}

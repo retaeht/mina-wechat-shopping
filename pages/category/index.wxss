@@ -1,0 +1,55 @@
+/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+.my-cate {
+  height: 100%;
+}
+.my-cate .cate-container {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.my-cate .cate-container .cate-menu {
+  flex: 2;
+  height: 100%;
+}
+.my-cate .cate-container .cate-menu .menu-list {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.my-cate .cate-container .cate-menu .current {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.my-cate .cate-container .cate-info {
+  flex: 5;
+  height: 100%;
+}
+.my-cate .cate-container .cate-info .info-group .info-title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-cate .cate-container .cate-info .info-group .info-title text {
+  font-size: 30rpx;
+}
+.my-cate .cate-container .cate-info .info-group .info-title .delimiter {
+  color: #ccc;
+  padding: 0 10rpx;
+}
+.my-cate .cate-container .cate-info .info-group .info-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+}
+.my-cate .cate-container .cate-info .info-group .info-list navigator {
+  width: 33.33%;
+  text-align: center;
+}
+.my-cate .cate-container .cate-info .info-group .info-list navigator image {
+  width: 60%;
+}

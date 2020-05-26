@@ -1,0 +1,10 @@
+<!--components/UpImg/UpImg.wxml-->
+<view class="upImg-container">
+  <view class="upImag-item" wx:for="{{upImgPath}}" wx:key="*this" bindtap="fuck" data-index="{{index}}">
+    <image src="{{item}}"  />
+    <view >
+      <icon type="clear" size="23" color="red">
+      </icon>
+    </view>
+  </view>
+</view>

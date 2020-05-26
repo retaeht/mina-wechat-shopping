@@ -1,0 +1,15 @@
+/* components/SearchInfo/SearchInfo.wxss */
+.search-info {
+  height: 90rpx;
+  padding: 10rpx 30rpx;
+  background-color: var(--themeColor);
+}
+.search-info navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 40rpx;
+  color: #666;
+}

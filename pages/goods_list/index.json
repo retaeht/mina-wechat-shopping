@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "my-tabs": "../../components/Tabs/Tabs",
+    "my-search": "../../components/SearchInfo/SearchInfo"
+  },
+  "navigationBarTitleText": "商品分类",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}
